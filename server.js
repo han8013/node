@@ -1,6 +1,7 @@
 // GRAB THE PACKAGES/VARIABLES WE NEED
 // ==================================================
 var express = require('express');
+var expressLayouts = require('express-ejs-layouts');
 var app = express();
 // var ig = require('instagram-node').instagram();
 
@@ -11,7 +12,7 @@ var app = express();
 app.use(express.static(__dirname + '/public'));
 // set the view engine to ejs
 app.set('view engine', 'ejs');
-
+app.use(expressLayouts);
 //router
 var router = require('./app/routes');
 app.use('/',router)

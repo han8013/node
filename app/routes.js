@@ -28,4 +28,6 @@ router.get('/about',function(req,res){
 router.get('/contact',function(req,res){
     res.render("pages/contact.ejs");
 });
-router.post('/contact');
+router.post('/contact',function(){
+
+});

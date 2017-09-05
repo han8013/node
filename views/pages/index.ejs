@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
     <head>
         <% include ../partials/head %>
@@ -6,12 +6,13 @@
     <body class="container">
         <header>
             <% include ../partials/header %>
-        </header>
+        </header> -->
+        <%- contentFor('body') %>
         <main>
             Instagram will display here.
 
             <div class="ejs-without-express-layout">
-                <h3>ejs without express layout</h1>
+                <h3>website with express ejs layout module</h1>
             </div>
             <div class="row">
                     <% grams.forEach(function(gram) { %>
@@ -33,8 +34,8 @@
                     <% }); %>
             </div>
         </main>
-        <footer>
+        <!-- <footer>
             <% include ../partials/footer %>
         </footer>
     </body>
-</html>
+</html> -->
